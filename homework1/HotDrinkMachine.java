@@ -33,6 +33,12 @@ public class HotDrinkMachine implements Machine{
         }
         return null;
     }
+
+    @Override
+    public HotDrink getProduct(String name) {
+        return null;
+    }
+
     public HotDrink getProduct(String name, int temperature, double value){
         for (HotDrink product: products
              ) {
