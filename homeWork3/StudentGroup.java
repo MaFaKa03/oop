@@ -9,7 +9,7 @@ public class StudentGroup {
 
     private Student student;
 
-    private List<Objects> students;
+    private List<Student> students;
 
     private List<StudentGroup> studentGroups;
 

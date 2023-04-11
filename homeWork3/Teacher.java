@@ -17,9 +17,9 @@ public class Teacher {
 
     }
 
-//    public void addGroup(StudentGroup studentGroup){
-//        allGroups.add(studentGroup);
-//    }
+    public void addGroup(List<Student> group){
+        allGroups.add(group);
+    }
 
 
     @Override

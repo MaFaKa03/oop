@@ -41,4 +41,8 @@ public class Student {
     public Teacher getTeacher() {
         return teacher;
     }
+    public Integer getScore(){
+        return score;
+    }
 }
+

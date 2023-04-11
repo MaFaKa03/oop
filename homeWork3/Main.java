@@ -18,12 +18,15 @@ public class Main {
         List<Student> groupThree = new ArrayList<>();
         List<List<Student>> ivanovsGroups = new ArrayList<>();
         List<List<Student>> petrovsGroups = new ArrayList<>();
+        ivanovsGroups.add(groupOne);
+        ivanovsGroups.add(groupThree);
+        petrovsGroups.add(groupTwo);
         Teacher petrov = new Teacher("Anatoliy", "Petrov", petrovsGroups);
         Teacher ivanov = new Teacher("Alexander", "Ivanov", ivanovsGroups);
         teachers.add(petrov);
         teachers.add(ivanov);
         students.add(new Student("Alex", "Park", 1, 5, ivanov));
-        students.add(new Student("Kostya", "Khait", 2, 4, petrov));
+        students.add(new Student("Kostya", "Khait", 2, 4, ivanov));
         students.add(new Student("Victoria", "Kravc", 3, 3, petrov));
 
 
@@ -46,23 +49,23 @@ public class Main {
                 groupThree.add(students.get(i));
             }
         }
-
-
-        if(Arrays.asList(groupOne).get(0).contains(ivanov) == true){
-            ivanovsGroups.add(groupOne);
-        } else if (Arrays.asList(groupTwo).get(0).contains(ivanov) == true) {
-            ivanovsGroups.add(groupTwo);
-        } else if(Arrays.asList(groupThree).get(0).contains(ivanov)){
-            ivanovsGroups.add(groupThree);
-        }
-
-        if(Arrays.asList(groupOne).get(0).contains(petrov) == true){
-            petrovsGroups.add(groupOne);
-        } else if (Arrays.asList(groupTwo).get(0).contains(petrov) == true) {
-            petrovsGroups.add(groupTwo);
-        } else if (Arrays.asList(groupThree).get(0).contains(petrov)){
-            petrovsGroups.add(groupThree);
-        }
+//
+//
+//        if(Arrays.asList(groupOne).get(0).contains(ivanov) == true){
+//            ivanovsGroups.add(groupOne);
+//        } else if (Arrays.asList(groupTwo).get(0).contains(ivanov) == true) {
+//            ivanovsGroups.add(groupTwo);
+//        } else if(Arrays.asList(groupThree).get(0).contains(ivanov)){
+//            ivanovsGroups.add(groupThree);
+//        }
+//
+//        if(Arrays.asList(groupOne).get(0).contains(petrov) == true){
+//            petrovsGroups.add(groupOne);
+//        } else if (Arrays.asList(groupTwo).get(0).contains(petrov) == true) {
+//            petrovsGroups.add(groupTwo);
+//        } else if (Arrays.asList(groupThree).get(0).contains(petrov)){
+//            petrovsGroups.add(groupThree);
+//        }
         TeacherComparator teacherComparator = new TeacherComparator();
         Collections.sort(teachers, teacherComparator);
 
