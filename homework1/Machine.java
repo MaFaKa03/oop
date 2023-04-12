@@ -8,7 +8,7 @@ public interface  Machine {
 
     Product getProductByCost(int cost);
 
-    public HotDrink getProduct(String name);
+   // public HotDrink getProduct(String name);
 
 
 

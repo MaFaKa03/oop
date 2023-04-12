@@ -1,11 +1,11 @@
 package oop.homework1;
 
 public abstract class Product {
-    //public boolean getValue;
+
     private String name;
     private int cost;
 
-
+    private double value;
 
     public String getName() {
         return name;
@@ -22,9 +22,13 @@ public abstract class Product {
                 ", cost=" + cost + ", ";
     }
 
-    Product(String name, int cost){
+    Product(String name, int cost, double value){
         this.name = name;
         this.cost = cost;
+        this.value = value;
 
+    }
+    public double getValue(){
+        return value;
     }
 }
