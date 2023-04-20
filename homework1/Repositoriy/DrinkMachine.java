@@ -1,4 +1,6 @@
-package oop.homework1;
+package oop.homework1.Repositoriy;
+
+import oop.homework1.Model.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,30 +11,7 @@ public class DrinkMachine<T extends Product> implements Machine {
     public List<T> getProducts(){
         return products;
     }
-    public T getProductByName(String name){
-        for (T product: products
-             ) {
-            if(product.getName().equals(name)){
-                return product;
-            }
-        }
-        return null;
-    }
 
-//    @Override
-//    public Product getProductByCost(int cost) {
-//        return null;
-//    }
-
-    public T getProductByCost(int cost){
-        for (T product: products
-             ) {
-            if(product.getCost() == cost){
-                return product;
-            }
-        }
-        return null;
-    }
 
 
     public T getProduct(String name, double value){

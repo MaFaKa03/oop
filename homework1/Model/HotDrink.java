@@ -1,4 +1,6 @@
-package oop.homework1;
+package oop.homework1.Model;
+
+import oop.homework1.Model.Product;
 
 public class HotDrink extends Product {
     private int temperature;
@@ -7,9 +9,6 @@ public class HotDrink extends Product {
         super(name, cost, value);
         this.temperature = temperature;
 
-    }
-    public int getTemperature(){
-        return temperature;
     }
 
 

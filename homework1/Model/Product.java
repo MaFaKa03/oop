@@ -1,4 +1,4 @@
-package oop.homework1;
+package oop.homework1.Model;
 
 public abstract class Product {
 
